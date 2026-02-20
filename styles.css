@@ -44,6 +44,49 @@ body {
     padding: 0 24px;
 }
 
+/* Logos Bar */
+.logos-bar {
+    background: white;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logos-bar.top-logos {
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+    margin-top: 80px;
+}
+
+.logos-bar.bottom-logos {
+    border-bottom: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 32px 0;
+    margin-bottom: 24px;
+}
+
+.footer .logo-img {
+    opacity: 1;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    opacity: 1;
+}
+
+.logo-img-choe {
+    height: 72px;
+}
+
 /* Navigation */
 .navbar {
     position: fixed;
@@ -55,6 +98,10 @@ body {
     box-shadow: var(--shadow-sm);
     z-index: 1000;
     transition: var(--transition);
+}
+
+.navbar-spacer {
+    height: 80px;
 }
 
 .nav-content {
@@ -351,6 +398,26 @@ section {
     color: white;
 }
 
+.feature-icon.icon-1 {
+    background: linear-gradient(135deg, #0066cc 0%, #004d99 100%);
+}
+
+.feature-icon.icon-2 {
+    background: linear-gradient(135deg, #00a8e8 0%, #0088c7 100%);
+}
+
+.feature-icon.icon-3 {
+    background: linear-gradient(135deg, #7b68ee 0%, #5a4fcf 100%);
+}
+
+.feature-icon.icon-4 {
+    background: linear-gradient(135deg, #00d4aa 0%, #00b894 100%);
+}
+
+.feature-icon.icon-5 {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+}
+
 .feature-icon svg {
     width: 32px;
     height: 32px;
@@ -504,6 +571,103 @@ section {
     line-height: 1.7;
 }
 
+/* Schedule Section */
+.schedule {
+    background: white;
+}
+
+.schedule-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.schedule-phase {
+    margin-bottom: 64px;
+}
+
+.schedule-phase:last-child {
+    margin-bottom: 0;
+}
+
+.phase-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.schedule-table {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.schedule-row {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    gap: 0;
+    border-bottom: 1px solid var(--border-color);
+    min-width: 600px;
+}
+
+.schedule-row.three-columns {
+    grid-template-columns: 200px 1fr 1fr;
+    min-width: 600px;
+}
+
+.schedule-row.four-columns {
+    grid-template-columns: 180px 1fr 1fr 1fr;
+    min-width: 800px;
+}
+
+.schedule-row:last-child {
+    border-bottom: none;
+}
+
+.schedule-row.header {
+    background: var(--gradient-primary);
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.schedule-row.header .schedule-day,
+.schedule-row.header .schedule-time {
+    color: white;
+}
+
+.schedule-day {
+    padding: 20px;
+    font-weight: 600;
+    color: var(--text-dark);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.schedule-time {
+    padding: 20px;
+    color: var(--text-light);
+    line-height: 1.6;
+    border-right: 1px solid var(--border-color);
+    min-width: 0;
+    word-wrap: break-word;
+}
+
+.schedule-row .schedule-time:last-child {
+    border-right: none;
+}
+
+.schedule-row:not(.header):hover {
+    background: var(--bg-light);
+}
+
 /* CTA Section */
 .cta-section {
     background: var(--gradient-primary);
@@ -625,6 +789,24 @@ section {
         display: flex;
     }
 
+
+    .logos-container {
+        gap: 32px;
+    }
+
+    .logo-img {
+        height: 50px;
+    }
+
+
+    .logos-bar.top-logos {
+        margin-top: 70px;
+    }
+
+    .logo-img-choe {
+        height: 60px;
+    }
+
     .hero {
         padding: 100px 0 60px;
     }
@@ -655,6 +837,16 @@ section {
         left: -24px;
     }
 
+    .schedule-day {
+        font-size: 0.95rem;
+        padding: 16px;
+    }
+
+    .schedule-time {
+        font-size: 0.9rem;
+        padding: 16px;
+    }
+
     .cta-actions {
         flex-direction: column;
         gap: 32px;
@@ -666,6 +858,26 @@ section {
 }
 
 @media (max-width: 480px) {
+    .logos-container {
+        gap: 24px;
+    }
+
+    .logo-img {
+        height: 40px;
+    }
+
+    .logos-bar.top-logos {
+        margin-top: 60px;
+    }
+
+    .logo-img-choe {
+        height: 50px;
+    }
+
+    .hero {
+        padding: 100px 0 60px;
+    }
+
     .hero-title {
         font-size: 2rem;
     }

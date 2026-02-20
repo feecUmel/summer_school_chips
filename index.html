@@ -20,6 +20,7 @@
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#value">Program</a></li>
                     <li><a href="#format">Format</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
                     <li><a href="#apply">Apply</a></li>
                 </ul>
                 <button class="mobile-menu-toggle" aria-label="Toggle menu">
@@ -31,6 +32,17 @@
         </div>
     </nav>
 
+    <!-- Top Logos -->
+    <div class="logos-bar top-logos">
+        <div class="container">
+            <div class="logos-container">
+                <img src="logos/but.svg" alt="BUT" class="logo-img">
+                <img src="logos/choe_logo.svg" alt="Chips of Europe" class="logo-img logo-img-choe">
+                <img src="logos/eu_logo.svg" alt="EU" class="logo-img">
+            </div>
+        </div>
+    </div>
+
     <!-- BLOCK 1 – HERO -->
     <section id="hero" class="hero">
         <div class="hero-background">
@@ -39,6 +51,7 @@
         </div>
         <div class="container">
             <div class="hero-content">
+                <div class="hero-badge">Summer School 2026</div>
                 <div class="hero-badge">Summer School 2026</div>
                 <h1 class="hero-title">
                     Chip Design &<br>
@@ -78,61 +91,78 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Design. Simulate. Fabricate.</h2>
-                <p class="section-subtitle">Master the complete semiconductor development cycle</p>
+                <p class="section-subtitle">Master the complete semiconductor development cycle from theory to fabrication</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="feature-icon icon-1">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="9" y1="3" x2="9" y2="21"></line>
-                            <line x1="15" y1="3" x2="15" y2="21"></line>
-                            <line x1="3" y1="9" x2="21" y2="9"></line>
-                            <line x1="3" y1="15" x2="21" y2="15"></line>
+                            <path d="M9 3v18M15 3v18M3 9h18M3 15h18"></path>
+                            <circle cx="6" cy="6" r="1.5" fill="currentColor"></circle>
+                            <circle cx="18" cy="6" r="1.5" fill="currentColor"></circle>
+                            <circle cx="6" cy="18" r="1.5" fill="currentColor"></circle>
+                            <circle cx="18" cy="18" r="1.5" fill="currentColor"></circle>
                         </svg>
                     </div>
-                    <h3>Advanced CMOS fundamentals</h3>
-                    <p>Deep dive into complementary metal-oxide-semiconductor technology and its applications</p>
+                    <h3>CMOS Technology Fundamentals</h3>
+                    <p>Review the basics of CMOS technology, physical principles of CMOS transistors, their modeling and operating modes</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="feature-icon icon-2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            <circle cx="8" cy="8" r="2"></circle>
+                            <circle cx="16" cy="8" r="2"></circle>
+                            <circle cx="8" cy="16" r="2"></circle>
+                            <circle cx="16" cy="16" r="2"></circle>
+                            <line x1="8" y1="10" x2="8" y2="14"></line>
+                            <line x1="16" y1="10" x2="16" y2="14"></line>
                         </svg>
                     </div>
-                    <h3>Analog IC building blocks</h3>
-                    <p>Learn to design and implement fundamental analog integrated circuit components</p>
+                    <h3>Analog IC Building Blocks</h3>
+                    <p>Design of basic analog circuit structures: current mirrors, current and voltage references, differential pairs, and output amplifier stages</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="feature-icon icon-3">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                             <line x1="8" y1="21" x2="16" y2="21"></line>
                             <line x1="12" y1="17" x2="12" y2="21"></line>
+                            <path d="M7 8h10M7 12h10M7 16h6"></path>
+                            <circle cx="17" cy="5" r="1" fill="currentColor"></circle>
                         </svg>
                     </div>
-                    <h3>Cadence & Synopsys environment</h3>
-                    <p>Hands-on experience with industry-standard EDA tools used by leading semiconductor companies</p>
+                    <h3>Cadence & Synopsys EDA Tools</h3>
+                    <p>Professional simulation and design tools for parameter extraction from SPICE models, circuit design, simulation and verification</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="feature-icon icon-4">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M12 2a15.3 15.3 0 0 0 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 0 4-10z"></path>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                            <path d="M12 2v4M12 18v4M2 12h4M18 12h4"></path>
+                            <circle cx="6" cy="6" r="1" fill="currentColor"></circle>
+                            <circle cx="18" cy="6" r="1" fill="currentColor"></circle>
+                            <circle cx="6" cy="18" r="1" fill="currentColor"></circle>
+                            <circle cx="18" cy="18" r="1" fill="currentColor"></circle>
                         </svg>
                     </div>
-                    <h3>Cleanroom wafer processing</h3>
-                    <p>Experience real-world semiconductor fabrication in state-of-the-art cleanroom facilities</p>
+                    <h3>Cleanroom Wafer Processing</h3>
+                    <p>Hands-on experience with basic technological steps for manufacturing simple structures on silicon wafers at CEITEC BUT facilities</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <div class="feature-icon icon-5">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="3"></circle>
                             <path d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"></path>
+                            <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path>
+                            <circle cx="12" cy="12" r="1" fill="currentColor"></circle>
                         </svg>
                     </div>
-                    <h3>Electron microscopy lab</h3>
-                    <p>Analyze and characterize semiconductor devices using advanced microscopy techniques</p>
+                    <h3>Electron Microscopy Analysis</h3>
+                    <p>Detailed analysis of structure and properties of semiconductor materials and devices at IPE FME</p>
                 </div>
             </div>
         </div>
@@ -150,29 +180,100 @@
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3>Virtual theoretical module</h3>
-                            <p>2–4 September: Engage with foundational concepts and advanced theory through interactive online sessions</p>
+                            <h3>Virtual Theoretical Module (2–4 September 2026)</h3>
+                            <p>Online lectures and specialized seminars led by academic staff from BUT and partner universities. Students will review CMOS technology basics, transistor physics, modeling, and operating modes. Topics include current mirrors, reference circuits, amplifiers, differential pairs, and output amplifier stages. This virtual part creates a unified professional foundation for all participants and prepares students for intensive design and laboratory work.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3>On-site project-based design</h3>
-                            <p>7–11 September: Apply your knowledge in hands-on design projects at our Brno facility</p>
+                            <h3>On-site Project-Based Learning (7–11 September 2026)</h3>
+                            <p>Practical design of a simple integrated circuit in CMOS technology. Students work in international teams using professional simulation and design tools (Cadence, Synopsys), applying knowledge gained during the virtual theoretical part. The program includes specialized laboratory exercises focused on technological and experimental aspects of microelectronics.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3>International teams</h3>
-                            <p>Collaborate with peers from around the world, building global networks and diverse perspectives</p>
+                            <h3>International Collaboration</h3>
+                            <p>Work in international teams of 2–3 members on a team project. The program brings together students and faculty from multiple European universities, fostering cross-cultural collaboration and knowledge exchange.</p>
                         </div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Industry context (Chips of Europe)</h3>
-                            <p>Learn within the framework of Europe's strategic semiconductor initiatives and industry needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHEDULE SECTION -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Program Schedule</h2>
+                <p class="section-subtitle">Detailed timeline of virtual and on-site activities</p>
+            </div>
+            <div class="schedule-content">
+                <div class="schedule-phase">
+                    <h3 class="phase-title">Theory - Online Lectures (2–4 September 2026)</h3>
+                    <div class="schedule-table">
+                        <div class="schedule-row header three-columns">
+                            <div class="schedule-day">Day</div>
+                            <div class="schedule-time">9:00 – 11:30</div>
+                            <div class="schedule-time">12:30 – 15:30</div>
+                        </div>
+                        <div class="schedule-row three-columns">
+                            <div class="schedule-day"><strong>Wednesday, Sept 2</strong></div>
+                            <div class="schedule-time">Summer school opening - basic organisation<br>Review of the basics of CMOS technology</div>
+                            <div class="schedule-time">Current mirrors</div>
+                        </div>
+                        <div class="schedule-row three-columns">
+                            <div class="schedule-day"><strong>Thursday, Sept 3</strong></div>
+                            <div class="schedule-time">Reference circuits</div>
+                            <div class="schedule-time">Amplifiers</div>
+                        </div>
+                        <div class="schedule-row three-columns">
+                            <div class="schedule-day"><strong>Friday, Sept 4</strong></div>
+                            <div class="schedule-time">Differential pair<br>Output amplifier stages</div>
+                            <div class="schedule-time">Simple operational amplifier</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-phase">
+                    <h3 class="phase-title">Practice - On-site at BUT (7–11 September 2026)</h3>
+                    <div class="schedule-table">
+                        <div class="schedule-row header four-columns">
+                            <div class="schedule-day">Day</div>
+                            <div class="schedule-time">9:00 – 11:30</div>
+                            <div class="schedule-time">12:30 – 15:30</div>
+                            <div class="schedule-time">15:30 – 19:00</div>
+                        </div>
+                        <div class="schedule-row four-columns">
+                            <div class="schedule-day"><strong>Monday, Sept 7</strong></div>
+                            <div class="schedule-time">Summer school opening - basic organisation<br>Simulation SW - Cadence and Synopsys<br>Review of the basics of CMOS technology</div>
+                            <div class="schedule-time">Current mirrors</div>
+                            <div class="schedule-time">Sightseeing tour around Brno city center</div>
+                        </div>
+                        <div class="schedule-row four-columns">
+                            <div class="schedule-day"><strong>Tuesday, Sept 8</strong></div>
+                            <div class="schedule-time">Reference circuits<br>Amplifiers</div>
+                            <div class="schedule-time">Practices in labs of IPE FME - electron microscopy<br>Practices in clean rooms of CEITEC BUT - simple chip fabrication</div>
+                            <div class="schedule-time"></div>
+                        </div>
+                        <div class="schedule-row four-columns">
+                            <div class="schedule-day"><strong>Wednesday, Sept 9</strong></div>
+                            <div class="schedule-time">Differential pair</div>
+                            <div class="schedule-time">Practices in labs of IPE FME - electron microscopy<br>Practices in clean rooms of CEITEC BUT - simple chip fabrication</div>
+                            <div class="schedule-time"></div>
+                        </div>
+                        <div class="schedule-row four-columns">
+                            <div class="schedule-day"><strong>Thursday, Sept 10</strong></div>
+                            <div class="schedule-time">Output amplifier stages</div>
+                            <div class="schedule-time">Simple operational amplifier - design and simulation</div>
+                            <div class="schedule-time">Brno dam trip and fun afternoon</div>
+                        </div>
+                        <div class="schedule-row four-columns">
+                            <div class="schedule-day"><strong>Friday, Sept 11</strong></div>
+                            <div class="schedule-time">Team project</div>
+                            <div class="schedule-time">Presentation of the team project<br>Conclusion of the summer school</div>
+                            <div class="schedule-time"></div>
                         </div>
                     </div>
                 </div>
@@ -185,13 +286,12 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Who Should Apply</h2>
-                <p class="section-subtitle">Join a select group of future semiconductor leaders</p>
             </div>
             <div class="eligibility-grid">
                 <div class="eligibility-card">
                     <div class="eligibility-number">01</div>
-                    <h3>MSc students</h3>
-                    <p>Graduate students pursuing advanced studies in microelectronics, electrical engineering, or related fields</p>
+                    <h3>MSc students (first year)</h3>
+                    <p>Graduate students in their first year pursuing advanced studies in microelectronics, electrical engineering, or related fields</p>
                 </div>
                 <div class="eligibility-card">
                     <div class="eligibility-number">02</div>
@@ -204,9 +304,9 @@
                     <p>Students with demonstrated interest and coursework in semiconductor technologies and integrated circuit design</p>
                 </div>
                 <div class="eligibility-card highlight">
-                    <div class="eligibility-number">20</div>
-                    <h3>Limited to 20 international participants</h3>
-                    <p>Small cohort size ensures personalized attention, hands-on experience, and meaningful collaboration</p>
+                    <div class="eligibility-number">15+</div>
+                    <h3>At least 15 participants from 3+ countries</h3>
+                    <p>International diversity ensures rich collaboration. Limited number of students per university to ensure broad range of countries represented</p>
                 </div>
             </div>
         </div>
@@ -248,6 +348,13 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
+            <div class="logos-bar bottom-logos">
+                <div class="logos-container">
+                    <img src="logos/but.svg" alt="BUT" class="logo-img">
+                    <img src="logos/choe_logo.svg" alt="Chips of Europe" class="logo-img">
+                    <img src="logos/eu_logo.svg" alt="EU" class="logo-img">
+                </div>
+            </div>
             <div class="footer-content">
                 <p>&copy; 2026 Summer School - Chip Design & Semiconductor Technologies. All rights reserved.</p>
                 <p>Brno, Czech Republic</p>
