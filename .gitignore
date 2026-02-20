@@ -1,0 +1,21 @@
+# Office documents
+*.xlsx
+*.docx
+*.xls
+*.doc
+
+# Figma export files
+College Summer School Landing Page – Figma Make_soubory/
+College Summer School Landing Page – Figma Make.htm
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-*
