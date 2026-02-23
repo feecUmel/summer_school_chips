@@ -96,18 +96,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Form submission handler (if you add a form later)
-const applyButton = document.querySelector('.cta-button.primary');
-if (applyButton && applyButton.getAttribute('href') === '#') {
-    applyButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        // Scroll to apply section or open form
-        const applySection = document.querySelector('#apply');
-        if (applySection) {
-            applySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    });
-}
+// Apply buttons now link directly to Google Form
 
 // Add parallax effect to hero section (subtle)
 window.addEventListener('scroll', () => {
