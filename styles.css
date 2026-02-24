@@ -46,9 +46,10 @@ body {
 
 /* Logos Bar */
 .logos-bar {
-    background: white;
+    background: white !important;
     padding: 20px 0;
     border-bottom: 1px solid var(--border-color);
+    color-scheme: light;
 }
 
 .logos-bar.top-logos {
@@ -77,14 +78,14 @@ body {
 }
 
 .logo-img {
-    height: 60px;
+    height: 90px;
     width: auto;
     object-fit: contain;
     opacity: 1;
 }
 
 .logo-img-choe {
-    height: 72px;
+    height: 108px;
 }
 
 /* Navigation */
@@ -657,6 +658,11 @@ section {
     min-width: 800px;
 }
 
+.schedule-row.five-columns {
+    grid-template-columns: 180px 1fr 1fr 1fr 1fr;
+    min-width: 1000px;
+}
+
 .schedule-row:last-child {
     border-bottom: none;
 }
@@ -794,11 +800,12 @@ section {
 
 /* Footer */
 .footer {
-    background: white;
+    background: white !important;
     color: var(--text-dark);
     padding: 40px 0;
     text-align: center;
     border-top: 1px solid var(--border-color);
+    color-scheme: light;
 }
 
 .footer-content {
@@ -828,7 +835,7 @@ section {
     }
 
     .logo-img {
-        height: 50px;
+        height: 75px;
     }
 
 
@@ -837,7 +844,7 @@ section {
     }
 
     .logo-img-choe {
-        height: 60px;
+        height: 90px;
     }
 
     .hero {
@@ -896,7 +903,7 @@ section {
     }
 
     .logo-img {
-        height: 40px;
+        height: 60px;
     }
 
     .logos-bar.top-logos {
@@ -904,7 +911,7 @@ section {
     }
 
     .logo-img-choe {
-        height: 50px;
+        height: 75px;
     }
 
     .hero {
@@ -932,6 +939,17 @@ section {
     .cta-button.large {
         padding: 16px 40px;
         font-size: 1.1rem;
+    }
+}
+
+/* Force light mode for logo sections */
+@media (prefers-color-scheme: dark) {
+    .logos-bar {
+        background: white !important;
+    }
+    
+    .footer {
+        background: white !important;
     }
 }
 
