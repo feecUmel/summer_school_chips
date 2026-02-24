@@ -658,9 +658,9 @@ section {
     min-width: 800px;
 }
 
-.schedule-row.five-columns {
-    grid-template-columns: 180px 1fr 1fr 1fr 1fr;
-    min-width: 1000px;
+.schedule-table .schedule-row.five-columns {
+    grid-template-columns: 180px 1fr 1fr 1fr 1fr !important;
+    min-width: 1000px !important;
 }
 
 .schedule-row:last-child {
