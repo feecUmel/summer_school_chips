@@ -326,6 +326,8 @@ body {
     transition: var(--transition);
     box-shadow: var(--shadow-md);
     border: 2px solid transparent;
+    white-space: normal;
+    text-align: center;
 }
 
 .cta-button:hover {
@@ -337,6 +339,16 @@ body {
 .cta-button.primary {
     background: white;
     color: var(--primary-color);
+}
+
+div.cta-button {
+    cursor: default;
+}
+
+div.cta-button:hover {
+    transform: none;
+    box-shadow: var(--shadow-md);
+    background: white;
 }
 
 .cta-button.large {
@@ -738,43 +750,6 @@ section {
     gap: 48px;
     margin-bottom: 48px;
     flex-wrap: wrap;
-}
-
-.qr-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-}
-
-.qr-placeholder {
-    width: 240px;
-    height: 240px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.qr-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.qr-placeholder span {
-    font-size: 0.875rem;
-    font-weight: 600;
-}
-
-.qr-label {
-    font-size: 0.95rem;
-    font-weight: 500;
 }
 
 .deadline-notice {
